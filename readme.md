@@ -32,3 +32,5 @@
     => create views.py in <* app_name *> folder and render function in views.py
     => create urls.py in <* app_name *> folder and add url what defined in views.py (For this we have to url mapping in urls.py file of root project by using include function)
     => now we can run python manage.py runserver and get by adding what we have added in mapping (ex- localhost:8000/secondApp/......)
+14> More on jinja2
+    => Created common layout.html in root project templates and used this layout.html in all html file inside templates folder of root project and secondApp
