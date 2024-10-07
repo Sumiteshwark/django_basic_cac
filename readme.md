@@ -8,3 +8,5 @@
 8> Folder Structure
     => myProject -> myProject -> settings.py (Includes db, server port, authentication, etc)
     => myProject -> myProject -> urls.py (Defines the url for the project)
+9> Basic flow
+    => users -> req -> urls.py -> views.py -> (templates, db, etc) ->  response
