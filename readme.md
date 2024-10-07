@@ -8,5 +8,12 @@
 8> Folder Structure
     => myProject -> myProject -> settings.py (Includes db, server port, authentication, etc)
     => myProject -> myProject -> urls.py (Defines the url for the project)
+
+####### Lec-3 #######
 9> Basic flow
     => users -> req -> urls.py -> views.py -> (templates, db, etc) ->  response
+
+10> templates(html) folder (To be created in main myProject folder)
+    => Add index.html in templates folder
+    => In settings.py add "templates" in DIRS list of TEMPLATES
+    => Add in views.py using render function which is imported from django.shortcuts import render
