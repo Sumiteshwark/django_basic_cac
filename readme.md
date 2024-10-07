@@ -22,3 +22,13 @@
     => Add styles.css in static folder
     => In settings.py add "STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]" after importing os
     => Now modify index.html in templates folder to include "<link rel="stylesheet" href="{% static 'styles.css' %}">" in head and "{% load static %}" at the top of the html
+
+####### Lec-4 #######
+12> jinja2 (Best Template Engine for django) => Used for rendering html templates and insert variables  in html
+13> Creating app in django (one root folder/project and can have multiple app folders) 
+    => python manage.py startapp <* app_name *> (To create the app) => mainly used to aware main project that we have new app.
+    => add <* app_name *> in settings.py inside [INSTALLED_APPS] (To add the app to the project)
+    => create new templates folder in <* app_name *> (best practice to create seperate templates folder for each app)
+    => create views.py in <* app_name *> folder and render function in views.py
+    => create urls.py in <* app_name *> folder and add url what defined in views.py (For this we have to url mapping in urls.py file of root project by using include function)
+    => now we can run python manage.py runserver and get by adding what we have added in mapping (ex- localhost:8000/secondApp/......)
