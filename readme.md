@@ -17,3 +17,8 @@
     => Add index.html in templates folder
     => In settings.py add "templates" in DIRS list of TEMPLATES
     => Add in views.py using render function which is imported from django.shortcuts import render
+
+11> static(images, js, css) folder (To be created in main myProject folder)
+    => Add styles.css in static folder
+    => In settings.py add "STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]" after importing os
+    => Now modify index.html in templates folder to include "<link rel="stylesheet" href="{% static 'styles.css' %}">" in head and "{% load static %}" at the top of the html
