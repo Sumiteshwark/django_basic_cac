@@ -34,3 +34,9 @@
     => now we can run python manage.py runserver and get by adding what we have added in mapping (ex- localhost:8000/secondApp/......)
 14> More on jinja2
     => Created common layout.html in root project templates and used this layout.html in all html file inside templates folder of root project and secondApp
+
+####### Lec-5 #######
+15> python manage.py migrate (Use to track database schema changes )
+16> python manage.py runserver
+14> Command to use superuser (i.e. /admin) 
+    => python manage.py createsuperuser
