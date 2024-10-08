@@ -50,3 +50,6 @@
     => Run "python manage.py migrate" (To track and apply database schema changes )
     => Now modify admin.py in secondApp app and register the model in admin.py
     => Now run "python manage.py runserver" (To start the server) and can see and update the data in admin panel(localhost:8000/admin) inside secondApp
+19> show data on UI
+    => In views.py of secondApp, get data from database(i.e. chai_variety table "ChaiVariety.objects.all()") and send it to index.html
+    => In index.html of secondApp, get that data and display it.
