@@ -56,3 +56,9 @@
 20> Add new field in the model.py of secondApp
     => Add "description" field in ChaiVariety model, so again have to run "python manage.py makemigrations secondApp"(To update migrations file) and "python manage.py migrate"(To track and apply database schema changes)
     => Now run "python manage.py runserver" and we can see new field description in secondApp of admin panel
+21> Create button for each chai variety and open description of that in new page
+    => Add button in index.html of secondApp
+    => Add details in views.py of secondApp (to get details of chai according to Id)
+    => Add details in urls.py of secondApp (to add url mapping for the requested Id)
+    => Add url in index.html button to refer to new page(Here we use the name property what we have added in urls.py)
+    => create chai_detail.html in templates folder of secondApp and show details their according to Id.

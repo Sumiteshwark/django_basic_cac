@@ -5,11 +5,14 @@
 {% block content %}<h1>This is secondApp index.html</h1>
 
 {% for chai in chais %}
-<div>
-    <img src="{{chai.image.url}}" width="100px" height="100px"/>
-    <div> {{chai.name}} </div>
-    <div> {{chai.type}} </div>
-    <div> {{chai.date_added}} </div>
+<div style="border: 1px solid #ccc; padding: 10px; width: 120px; text-align: center; margin-top:20px">
+    <img src="{{chai.image.url}}" width="100px" height="100px" style="border-radius: 50%;"/>
+    <div style="font-weight: bold; margin-top: 5px;"> {{chai.name}} </div>
+    <div style="font-style: italic; color: gray;"> {{chai.type}} </div>
+    <div style="font-size: 12px; color: #666;"> {{chai.date_added}} </div>
+    <div><a href="{% url 'chai_detail' chai.id %}">
+        <button style="cursor: pointer;">{{chai.type}}-{{chai.id}}</button>
+    </a> </div>
 </div>
 {% endfor %}
 
