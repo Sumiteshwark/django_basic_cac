@@ -38,5 +38,15 @@
 ####### Lec-5 #######
 15> python manage.py migrate (Use to track database schema changes )
 16> python manage.py runserver
-14> Command to use superuser (i.e. /admin) 
+17> Command to use superuser (i.e. /admin) 
     => python manage.py createsuperuser
+
+######## Lec-6 #######
+18> Creating models:
+    => best practice to create models.py in any other app(i.e. not in root project app)
+    => Here I created models.py in secondApp app
+    => In models.py, I used ImageField to upload images(so we have to install Pillow and so some configuration in settings.py and urls.py in root app)
+    => Run "python manage.py makemigrations <* optional_app_name *>" (To create migrations file for the app, mainly used to convert models.py(ie django ORM) into database schema(ie sql table)) 
+    => Run "python manage.py migrate" (To track and apply database schema changes )
+    => Now modify admin.py in secondApp app and register the model in admin.py
+    => Now run "python manage.py runserver" (To start the server) and can see and update the data in admin panel(localhost:8000/admin) inside secondApp
