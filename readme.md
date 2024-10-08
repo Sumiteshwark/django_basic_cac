@@ -53,3 +53,6 @@
 19> show data on UI
     => In views.py of secondApp, get data from database(i.e. chai_variety table "ChaiVariety.objects.all()") and send it to index.html
     => In index.html of secondApp, get that data and display it.
+20> Add new field in the model.py of secondApp
+    => Add "description" field in ChaiVariety model, so again have to run "python manage.py makemigrations secondApp"(To update migrations file) and "python manage.py migrate"(To track and apply database schema changes)
+    => Now run "python manage.py runserver" and we can see new field description in secondApp of admin panel
